@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+
+    timeline-scope: --Scroller;
+}
+
+.long-element {
+    height: 3000px;
+}
+
+.scroller {
+    overflow-y: scroll;
+    flex: 1;
+
+    scroll-timeline-name: --Scroller;
+}
+  
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    position: fixed;
+    top: 100%;
+}
+
+.box_1 {
+    left: 20%;
+}
+
+.box_2 {
+    left: 45%;
+}
+
+.box_3 {
+    left: 70%;
+}
+
+.animation_1 {
+    animation: rotate-box_1;
+    animation-timeline: --Scroller;
+}
+  
+@keyframes rotate-box_1 {
+    0% {
+      rotate: 0deg;
+      top: 100%;
+    }
+
+    20% {
+        rotate: 0deg;
+        top: 40%;
+    }
+
+    40% {
+        rotate: 180deg;
+        top: 40%;
+    }
+
+    80% {
+        rotate: 180deg;
+        top: 40%;
+    }
+  
+    100% {
+        rotate: 180deg;
+        top: -20%;
+    }
+}
+
+.animation_2 {
+    animation: rotate-box_2;
+    animation-timeline: --Scroller;
+}
+  
+@keyframes rotate-box_2 {
+    0% {
+      rotate: 0deg;
+      top: 100%;
+    }
+
+    20% {
+        rotate: 0deg;
+        top: 40%;
+    }
+
+    40% {
+        rotate: 0deg;
+        top: 40%;
+    }
+
+    60% {
+        rotate: 180deg;
+        top: 40%;
+    }
+
+    80% {
+        rotate: 180deg;
+        top: 40%;
+    }
+  
+    100% {
+        rotate: 180deg;
+      top: -20%;
+    }
+}
+
+.animation_3 {
+    animation: rotate-box_3;
+    animation-timeline: --Scroller;
+}
+  
+@keyframes rotate-box_3 {
+    0% {
+      rotate: 0deg;
+      top: 100%;
+    }
+
+    20% {
+        rotate: 0deg;
+        top: 40%;
+      }
+
+    60% {
+        rotate: 0deg;
+        top: 40%;
+    }
+
+    80% {
+        rotate: 180deg;
+        top: 40%;
+    }
+  
+    100% {
+      rotate: 180deg;
+      top: -20%;
+    }
+}
